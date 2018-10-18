@@ -13,13 +13,13 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @Accessors(chain = true)
-public class TestRun {
+public class Launch {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
-    boolean result;
+    boolean status;
 
     @OneToMany()
     @JoinColumn(name = "testRunId")
